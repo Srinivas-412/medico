@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "src/server.js",
   "scripts": {
+    "start": "node src/server.js",
     "server": "nodemon src/server.js",
     "client": "npm run dev --prefix pharmacy-frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\""
