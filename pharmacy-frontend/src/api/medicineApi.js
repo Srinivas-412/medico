@@ -1,9 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:3000/api/medicines",
+  baseURL: "https://medico-2-y2cq.onrender.com/api/medicines",
 });
-
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
 
